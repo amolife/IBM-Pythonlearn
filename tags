@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+a	100.py	/^a = n % 10$/;"	v
+b	100.py	/^b = n \/\/ 10 % 10$/;"	v
+bar	r.py	/^def bar():$/;"	f
+bonus	2.py	/^        bonus = bonus + rate[i]*(revenue - rev[i])$/;"	v
+bonus	2.py	/^bonus = 0.0$/;"	v
+c	100.py	/^c = n \/\/ 100 % 10$/;"	v
+digit	17.py	/^digit = 0$/;"	v
+fib	fibonacci.py	/^def fib(n):$/;"	f
+fibs	fibonacci2.py	/^fibs = [1,1]$/;"	v
+letters	17.py	/^letters = 0$/;"	v
+n	100.py	/^n = int(input("input number:"))$/;"	v
+n	fibonacci.py	/^n = int(input("how many nums?:"))$/;"	v
+others	17.py	/^others = 0$/;"	v
+rate	2.py	/^rate = (0.01,0.015,0.03,0.05,0.075,0.1)$/;"	v
+rev	2.py	/^rev = (1000000,600000,400000,200000,100000,0)$/;"	v
+revenue	2.py	/^        revenue = rev[i]$/;"	v
+revenue	2.py	/^revenue = float(input("income:"))$/;"	v
+s	17.py	/^s = input('请输入一个字符串:\\n')$/;"	v
+space	17.py	/^space = 0$/;"	v
+view_bar	loading.py	/^def view_bar(num, total):$/;"	f
