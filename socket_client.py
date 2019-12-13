@@ -1,3 +1,6 @@
+#! /usr/bin/env python3
+# _*_ coding: UTF-8 _*_
+
 import socket  # 客户端 发送一个数据，再接收一个数据
 
 # 声明socket类型，同时生成链接对象

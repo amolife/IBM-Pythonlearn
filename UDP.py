@@ -1,5 +1,8 @@
-# 不需要建立连接
+# ! /usr/bin/env python3
+# _*_ coding: UTF-8 _*_
+
 import socket
+# 不需要建立连接
 # 创建socket对象
 # SOCK_DGRAM    udp模式
 send1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
