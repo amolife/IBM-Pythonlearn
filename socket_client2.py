@@ -6,7 +6,7 @@ import socket  # 客户端 发送一个数据，再接收一个数据
 
 # 声明socket类型，同时生成链接对象
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.4', 8002))  # 建立一个链接，连接到本地的6969端口
+client.connect(('192.168.1.103', 8002))  # 建立一个链接，连接到本地的6969端口
 
 while True:
     msg = input('输入：')  # strip默认取出字符串的头尾空格
