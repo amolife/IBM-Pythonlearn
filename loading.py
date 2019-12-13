@@ -5,12 +5,15 @@ import sys
 import time
 
 print("downloading：")
+
+
 def view_bar(num, total):
     rate = float(num) / float(total)
     rate_num = int(rate * 100)
-    r = "\r"+("="*(2*rate_num//10)+">")+(" "*(20-2*rate_num//10))+'%d%%' % (rate_num, )
+    r = "\r"+("="*(2*rate_num//10)+">") + \
+        (" "*(20-2*rate_num//10))+'%d%%' % (rate_num, )
     sys.stdout.write(r)
-    sys.stdout.flush() # 刷新缓冲区
+    sys.stdout.flush()  # 刷新缓冲区
 
 
 if __name__ == '__main__':
@@ -20,4 +23,3 @@ if __name__ == '__main__':
 
 
 print("\ndownload successful\n")
-
