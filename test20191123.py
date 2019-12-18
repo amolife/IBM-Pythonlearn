@@ -1,4 +1,4 @@
-######! /usr/bin/python3.6
+#! /usr/bin/env python3
 sum1 = 0
 for i in range(1, 100+1):  # 中文注释
     sum1 += i
