@@ -69,7 +69,7 @@ class Meizitu(Thread):
 def main():
     while True:
         try:
-            nNum = int(raw_input(u"请输入要下载几页: "))
+            nNum = int(input(u"请输入要下载几页: "))
             if nNum > 0:
                 break
         except ValueError:

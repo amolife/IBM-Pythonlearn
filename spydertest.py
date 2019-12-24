@@ -3,7 +3,7 @@
 """
 Created on Sun Dec 22 14:55:55 2019
 
-@author: debianibm
+@author: debianibm 
 """
 
 import csv
@@ -36,3 +36,4 @@ ax1.scatter(x, y, marker="*", c="b", edgecolors="b")
 # ax2.set_title("Title-ax2")
 ax1.grid(axis='x')
 ax2.plot(x, y, "b*")
+plt.show()
