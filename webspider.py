@@ -12,6 +12,10 @@ from requests import structures
 import math
 import os
 import time
+from collections import Iterable,Iterator
+import builtins  # 可以查看内建函数
+from PIL import Image 
+import argparse  #构造命令
 
 gheads = {
     "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87,Safari/537.36", }
@@ -33,6 +37,68 @@ header_ordered = structures.OrderedDict(
 selector = etree.HTML(text)
 #info = selector.xpath('//div[@class="image"]/ul/li/text()')
 
+
+# =============================================================================append,sort,reverse等，这些是就地执行的。而且作为函数返回，是None
+# In [204]: 
+# 
+# In [204]: l = [1,2,3]
+# 
+# In [205]: l.append(4)
+# 
+# In [206]: l
+# Out[206]: [1, 2, 3, 4]
+# 
+# In [207]: l2 = l.append(5)
+# 
+# In [208]: l2
+# 
+# In [209]: l2
+# 
+# In [210]:  # l2 返回的是None
+# =============================================================================
+
+# ============================================================================= append, extend
+# In [185]: l = [1,2,3]
+# In [187]: l.append([4,5])
+# In [188]: l
+# Out[188]: [1, 2, 3, [4, 5]]
+# In [189]: l.extend([6,7])
+# In [190]: l
+# Out[190]: [1, 2, 3, [4, 5], 6, 7]
+# In [191]: l.extend(8,9)
+# Traceback (most recent call last):
+#   File "<ipython-input-191-ecb1d78f45c4>", line 1, in <module>
+#     l.extend(8,9)
+# TypeError: extend() takes exactly one argument (2 given)
+# 
+# =============================================================================
+# =============================================================================generator 生成器，[] 换成 () 如果在函数中变成generator，就用yield + 某个
+# In [169]: L = [x*2 for x in range(10)]
+# In [170]: L
+# Out[170]: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+# 
+# In [171]: G = (x*2 for x in range(10))
+# In [172]: G
+# Out[172]: <generator object <genexpr> at 0xabddb1ac>
+# In [173]: next(G)
+# Out[173]: 0
+# In [174]: next(G)
+# Out[174]: 2
+# In [175]: next(G)
+# Out[175]: 4
+# In [176]: next(G)
+# Out[176]: 6
+# =============================================================================
+# =============================================================================检查迭代对象，迭代器
+# from collections import Iterable,Iterator
+# In [157]: isinstance([],Iterator)
+# Out[157]: False
+# 
+# In [158]: isinstance([],Iterable)
+# Out[158]: True
+# iter()可以把不是Iterator的对象变成iterator
+# 凡是可作用与for循环的对象都是Iterable
+# 凡是可作用于next()函数的对象都是Iterator =============================================================================
 
 # =============================================================================try语句，注意else是和try结合的，不是和if
 # In [125]: while True:

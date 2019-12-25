@@ -4,23 +4,23 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-a	100.py	/^a = n % 10$/;"	v
-b	100.py	/^b = n \/\/ 10 % 10$/;"	v
-bar	r.py	/^def bar():$/;"	f
-bonus	2.py	/^        bonus = bonus + rate[i]*(revenue - rev[i])$/;"	v
-bonus	2.py	/^bonus = 0.0$/;"	v
-c	100.py	/^c = n \/\/ 100 % 10$/;"	v
-digit	17.py	/^digit = 0$/;"	v
-fib	fibonacci.py	/^def fib(n):$/;"	f
-fibs	fibonacci2.py	/^fibs = [1, 1]$/;"	v
-letters	17.py	/^letters = 0$/;"	v
-n	100.py	/^n = int(input("input number:"))$/;"	v
-n	fibonacci.py	/^n = int(input("how many nums?:"))$/;"	v
-others	17.py	/^others = 0$/;"	v
-rate	2.py	/^rate = (0.01,0.015,0.03,0.05,0.075,0.1)$/;"	v
-rev	2.py	/^rev = (1000000,600000,400000,200000,100000,0)$/;"	v
-revenue	2.py	/^        revenue = rev[i]$/;"	v
-revenue	2.py	/^revenue = float(input("income:"))$/;"	v
-s	17.py	/^s = input('请输入一个字符串:\\n')$/;"	v
-space	17.py	/^space = 0$/;"	v
-view_bar	loading.py	/^def view_bar(num, total):$/;"	f
+ax1	./spydertest.py	/^ax1 = axes[0]$/;"	v
+ax2	./spydertest.py	/^ax2 = axes[1]$/;"	v
+content_byte	./webspider.py	/^content_byte = html.content  # byte$/;"	v
+content_decode	./webspider.py	/^content_decode = content_byte.decode('utf-8')  # byte decode to UTF-8$/;"	v
+csv_list	./spydertest.py	/^csv_list = []$/;"	v
+csv_list	./spydertest.py	/^csv_list = np.array(csv_list, dtype=int)$/;"	v
+gheads	./webspider.py	/^gheads = {$/;"	v
+header	./webspider.py	/^header = html.headers$/;"	v
+header_ordered	./webspider.py	/^header_ordered = structures.OrderedDict($/;"	v
+html	./webspider.py	/^html = requests.get(urltest, headers=gheads)$/;"	v
+lines	./spydertest.py	/^    lines = csv.reader(file)$/;"	v
+selector	./webspider.py	/^selector = etree.HTML(text)$/;"	v
+text	./webspider.py	/^text = html.text  # text$/;"	v
+urltest	./webspider.py	/^urltest = 'http:\/\/www.baidu.com'$/;"	v
+urltest2	./webspider.py	/^urltest2 = urltest+'\/robots.txt'$/;"	v
+x	./numpytest.py	/^x = np.random.random(5)$/;"	v
+x	./spydertest.py	/^x = csv_list[:, 0]  # lines of row #0$/;"	v
+y	./numpytest.py	/^y = np.random.rand(5, 5)$/;"	v
+y	./spydertest.py	/^y = csv_list[:, 1]  # lines of row #1$/;"	v
+z	./numpytest.py	/^z = np.random.random(5)$/;"	v
